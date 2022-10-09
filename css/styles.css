@@ -201,6 +201,20 @@ nav {
   background-color: var(--primary-background-color);
 }
 
+/* Overlay */
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/herobackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /* sections */
 
 .section {
@@ -229,6 +243,33 @@ nav {
 
 .feature-list .item {
   width: 270px;
+}
+
+.feature-list .item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item.icon-delivery::before {
+  background-image: url('../images/antenna.svg');
+}
+
+.item.icon-clock::before {
+  background-image: url('../images/clock.svg');
+}
+
+.item.icon-diagram::before {
+  background-image: url('../images/diagram.svg');
+}
+
+.item.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
 }
 
 .section.features {
@@ -448,8 +489,6 @@ footer {
 .address-foot .item:not(:last-child) {
   margin-bottom: 9px;
 }
-
-
 
 .visually-hidden {
   position: absolute;
