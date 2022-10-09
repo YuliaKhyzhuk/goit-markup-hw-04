@@ -249,14 +249,15 @@ nav {
   content: '';
   display: block;
   height: 120px;
-  padding: 25px 100px;
+  /* padding: 25px 100px; */
   background-color: #f5f4fa;
-  background-size: contain;
+  background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 30px;
 }
 
-.item.icon-delivery::before {
+.item.icon-antenna::before {
   background-image: url('../images/antenna.svg');
 }
 
