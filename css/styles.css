@@ -88,7 +88,7 @@ body {
 
 nav {
   display: flex;
-  align-items: center;
+  text-align: center;
 }
 
 .site-nav .item + .item {
@@ -245,7 +245,7 @@ nav {
   width: 270px;
 }
 
-.feature-list .item::before {
+/* .feature-list .item::before {
   content: '';
   display: block;
   height: 120px;
@@ -270,7 +270,7 @@ nav {
 
 .item.icon-astronaut::before {
   background-image: url('../images/astronaut.svg');
-}
+} */
 
 .section.features {
   padding-bottom: 0;
@@ -550,7 +550,7 @@ footer {
   background-color: var(--accent-color);
 }
 
-.icon-instagram {
+/* .icon-instagram {
   background-image: url('../images/instagramfoot.svg');
 }
 
@@ -564,7 +564,7 @@ footer {
 
 .icon-linkedin {
   background-image: url('../images/linkedinfoot.svg');
-}
+} */
 
 .visually-hidden {
   position: absolute;
