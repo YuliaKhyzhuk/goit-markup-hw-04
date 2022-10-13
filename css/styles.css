@@ -37,6 +37,7 @@ body {
 }
 
 /* logo */
+
 .logo {
   display: block;
   padding-top: 25px;
@@ -124,8 +125,6 @@ nav {
 }
 
 .cont-nav .cont {
-  /* display: block; */
-
   display: flex;
   align-items: center;
   gap: 10px;
@@ -139,7 +138,6 @@ nav {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   text-decoration: none;
 }
 
@@ -148,8 +146,8 @@ nav {
   fill: currentColor;
 }
 
-.list .cont:hover,
-.list .cont:focus {
+.cont-nav .cont:hover,
+.cont-nav .cont:focus {
   color: var(--accent-color);
 }
 
@@ -194,7 +192,6 @@ nav {
 
   color: var(--primary-background-color);
   background-color: var(--accent-color);
-  /* border-color: transparent; */
   font-family: inherit;
 
   font-weight: 700;
@@ -255,42 +252,12 @@ nav {
   width: 270px;
 }
 
-/* .feature-list .item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  background-color: #f5f4fa;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.item.icon-antenna::before {
-  background-image: url('../images/antenna.svg');
-}
-
-.item.icon-clock::before {
-  background-image: url('../images/clock.svg');
-}
-
-.item.icon-diagram::before {
-  background-image: url('../images/diagram.svg');
-}
-
-.item.icon-astronaut::before {
-  background-image: url('../images/astronaut.svg');
-} */
-
 .feature-item {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 120px;
   background-color: #f5f4fa;
-  /* background-size: 70px 70px; */
-  /* background-repeat: no-repeat;
-  background-position: center; */
   margin-bottom: 30px;
 }
 
@@ -383,34 +350,32 @@ nav {
   justify-content: center;
 }
 
+.social-link-item {
+  width: 44px;
+  height: 44px;
+}
+
 .social-list-team .link {
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--primary-text-color);
 
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
 }
 
 .social-list-team .icon {
   fill: currentColor;
-  padding: 0;
 }
 
 .social-list-team > .item:not(:last-child) {
   margin-right: 10px;
 }
 
-/* .social-list-team > .link:hover .icon {
-  background-color: var(--accent-color);
-  color: var(--primary-background-color);
-  border-radius: 50%;
-} */
-
 .social-link-item:hover,
 .social-link-item:focus {
-  background-color: var(--accent-color); 
+  background-color: var(--accent-color);
   border-radius: 50%;
 }
 
@@ -419,12 +384,10 @@ nav {
   color: var(--primary-background-color);
 }
 
-
 /* section clients */
 
 .client-list {
   display: flex;
-
 }
 
 .client-list .client-item + .client-item {
@@ -434,37 +397,31 @@ nav {
 .client-item {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 170px;
   height: 92px;
-
-border: 1px solid #AFB1B8;
-border-radius: 4px;
 }
 
 .client-link {
-  color: #AFB1B8;
-}
-.client-item:hover,
-.client-item:focus {
-  border: 1px solid #2196F3;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .client-item:hover .client-link,
 .client-item:focus .client-link {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
   color: var(--accent-color);
 }
 
 .client-icon {
   fill: currentColor;
-
 }
-
-/* .client-item:hover .client-icon,
-.client-item:focus .client-icon {
-   color: var(--accent-color);
-} */
 
 /* section portfolio */
 
@@ -540,7 +497,7 @@ border-radius: 4px;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 
-  width: 370px;
+  width: 100%;
 }
 
 .portfolio-list .item {
@@ -634,14 +591,18 @@ footer {
   display: flex;
 }
 
+.social-list-foot > .item {
+  width: 44px;
+  height: 44px;
+}
 .social-list-foot .link {
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--primary-background-color);
 
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
 
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
@@ -649,7 +610,6 @@ footer {
 
 .social-list-foot .icon {
   fill: currentColor;
-  padding: 0;
 }
 
 .social-list-foot > .item:not(:last-child) {
@@ -678,36 +638,31 @@ footer {
   overflow: hidden;
 }
 
-/* 
-спрацювало для футера - ставить по центру бекграунда
-.test-a,
-.test-li {
-  display: flex;
-  margin: auto;
-} */
+/*Приклад ::before
 
-/* 
-тести
-.test-ul,
-.test-svg 
-/* .test-ul {
-  text-align: center;
-} */
-
-/* 
-backgrounds
-.icon-instagram {
-  background-image: url('../images/instagramfoot.svg');
+ .feature-list .item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
 }
 
-.icon-twitter {
-  background-image: url('../images/twitterfoot.svg');
+.item.icon-antenna::before {
+  background-image: url('../images/antenna.svg');
 }
 
-.icon-facebook {
-  background-image: url('../images/facebookfoot.svg');
+.item.icon-clock::before {
+  background-image: url('../images/clock.svg');
 }
 
-.icon-linkedin {
-  background-image: url('../images/linkedinfoot.svg');
+.item.icon-diagram::before {
+  background-image: url('../images/diagram.svg');
+}
+
+.item.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
 } */
